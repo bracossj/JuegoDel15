@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-image: url('./public/fondo.png');
+  background-size: cover;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+#todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#start-button {
+  text-align: center;
+  font-size: 18px;
+  background-color: #df747f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 2px solid #161b3e;
+}
+
+
+#game-container {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  border: 10px solid #dea25b;
+  background-color: #e9c090;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tile {
+  background-color: #cdd5e0;
+  margin: 0;
+  width: 98%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 25%;
+}
